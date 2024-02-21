@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <title>Result Page</title>
+    </h:head>
+
+    <h:body>
+        <h2>Calculation Result</h2>
+        <p>Wynik obliczeń:</p>
+        <p>Wartość dla a: #{coefficientsBean.a}</p>
+        <p>Wartość dla b: #{coefficientsBean.b}</p>
+        <p>Wartość dla c: #{coefficientsBean.c}</p>
+        <p>Miejsce zerowe: #{coefficientsBean.result}</p>
+        <h:form>
+            <h:commandButton value="Powrót" action="/coefficientsInput.xhtml" />
+        </h:form>
+    </h:body>
+
+</html>

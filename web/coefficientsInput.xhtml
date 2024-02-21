@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <title>Coefficients Input</title>
+</h:head>
+<h:body>
+    <h:form>
+        <h:outputLabel for="a" value="Współczynnik a: " />
+        <h:inputText id="a" value="#{coefficientsBean.a}" />
+<br/><br/>
+        <h:outputLabel for="b" value="Współczynnik b: " />
+        <h:inputText id="b" value="#{coefficientsBean.b}" />
+<br/><br/>
+        <h:outputLabel for="c" value="Współczynnik c: " />
+        <h:inputText id="c" value="#{coefficientsBean.c}" />
+        <br/><br/>
+<h:commandButton value="Losuj parametry" action="#{coefficientsBean.generateRandomParameters}"  />
+        <h:commandButton value="Oblicz" action="#{coefficientsBean.calculateResult}" />
+        <h:messages />
+    </h:form>
+</h:body>
+</html>
+
